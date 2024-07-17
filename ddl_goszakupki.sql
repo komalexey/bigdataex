@@ -15,3 +15,10 @@ CREATE TABLE IF NOT EXISTS contracts(
     suppl_inn VARCHAR,                                   -- ИНН компании-поставщика
     ord_id VARCHAR                                       -- Номер закупки на сайте
 );
+
+-- Таблица регионов Российской Федерации
+CREATE TABLE IF NOT EXISTS regions(
+	id INT PRIMARY KEY,									-- Главный ключ
+	kod VARCHAR(2),										-- Код региона РФ
+	name VARCHAR										-- Наименование региона РФ
+);
